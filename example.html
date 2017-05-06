@@ -74,76 +74,161 @@
         i.fa {
             color: purple;
         }
+
+        .avatar {
+            border-radius: 100px;
+        }
+
+
+
+        /**/
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        /**/
+
+        .footer {
+            height: 100px;
+            background: gray;
+        }
+
+        .page-wrapper {
+            min-height: 100%;
+            background: pink;
+            margin-bottom: -100px;
+        }
+
+        .footer-buffer {
+            height: 100px;
+        }
+
+        .header {
+            height: 50px;
+            background: purple;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .column_pos_left {
+            width: 20%;
+            background: orange;
+        }
+
+        .column_pos_right {
+            width: 20%;
+            background: lightgreen;
+        }
+
+        .column_pos_center {
+            width: 60%;
+            background: lightblue;
+        }
+
+        .column,
+        .header,
+        .footer {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header,
+        .footer {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
-<div class="header-text">My personal page</div>
 
-<ul class="aside-menu">
-    <li class="aside-menu__item">
-        <i class="fa fa-diamond fa-1x" aria-hidden="true"></i>
-        <a href="#">About</a>
-    </li>
-    <li class="aside-menu__item">
-        <i class="fa fa-coffee fa-1x" aria-hidden="true"></i>
-        <a href="#">My works</a>
-    </li>
-    <li class="aside-menu__item">
-        <i class="fa fa-bell fa-1x" aria-hidden="true"></i>
-        <a href="#">Contacts</a>
-    </li>
-</ul>
+<div class="page-wrapper">
+    <div class="header">
+        <div class="header-text">My personal page</div>
+    </div>
+    <div class="content">
+        <div class="column column_pos_left">
+            <ul class="aside-menu">
+                <li class="aside-menu__item">
+                    <i class="fa fa-diamond fa-1x" aria-hidden="true"></i>
+                    <a href="#">About</a>
+                </li>
+                <li class="aside-menu__item">
+                    <i class="fa fa-coffee fa-1x" aria-hidden="true"></i>
+                    <a href="#">My works</a>
+                </li>
+                <li class="aside-menu__item">
+                    <i class="fa fa-bell fa-1x" aria-hidden="true"></i>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="column column_pos_center">
+            <img class="avatar" src="https://avatars2.githubusercontent.com/u/13451284?v=3&s=460" alt="" width="200" height="200">
 
- <div class="banner">
-     Advertisement
- </div>
+            <p class="paragraph">
+                Hi! My name is Lucy! I am frontend-developer, coffee lover and dancer.<br>
+                <i>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </i>
+            </p>
 
-<img class="avatar" src="https://avatars2.githubusercontent.com/u/13451284?v=3&s=460" alt="" width="200" height="200">
+            <h2>My best works</h2>
 
-<p class="paragraph">
-    Hi! My name is Lucy! I am frontend-developer, coffee lover and dancer.<br>
-    <i>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-    </i>
-</p>
+            <ul class="works">
+                <li class="work">
+                    <a class="work-link" href="#">
+                        <img class="work-img" src="https://unsplash.it/100" alt="">
+                        <span class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                    </a>
+                </li>
+                <li class="work">
+                    <a class="work-link" href="#">
+                        <img class="work-img" src="https://unsplash.it/100" alt="">
+                        <span class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                    </a>
+                </li>
+                <li class="work">
+                    <a class="work-link" href="#">
+                        <img class="work-img" src="https://unsplash.it/100" alt="">
+                        <span class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                    </a>
+                </li>
+            </ul>
 
-<h2>My best works</h2>
+            <a class="button" href="mailto:adress.mail.ru">Send me email</a>
+        </div>
+        <div class="column column_pos_right">
+            <div class="banner">
+                Advertisement
+            </div>
+        </div>
+    </div>
 
-<ul class="works">
-    <li class="work">
-        <a class="work-link" href="#">
-            <img class="work-img" src="https://unsplash.it/100" alt="">
-            <span class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-        </a>
-    </li>
-    <li class="work">
-        <a class="work-link" href="#">
-            <img class="work-img" src="https://unsplash.it/100" alt="">
-            <span class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-        </a>
-    </li>
-    <li class="work">
-        <a class="work-link" href="#">
-            <img class="work-img" src="https://unsplash.it/100" alt="">
-            <span class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-        </a>
-    </li>
-</ul>
+    <div class="footer-buffer"></div>
 
-<a class="button" href="mailto:adress.mail.ru">Send me email</a>
+</div>
 
-<ul class="footer-links">
-    <li class="footer-links__link"><a href="#">About</a></li>
-    <li class="footer-links__link"><a href="#">Works</a></li>
-    <li class="footer-links__link"><a href="#">Contancts</a></li>
-    <li class="footer-links__link">MCS, 2017</li>
-</ul>
+<div class="footer">
+    <ul class="footer-links">
+        <li class="footer-links__link"><a href="#">About</a></li>
+        <li class="footer-links__link"><a href="#">Works</a></li>
+        <li class="footer-links__link"><a href="#">Contancts</a></li>
+        <li class="footer-links__link">MCS, 2017</li>
+    </ul>
+</div>
 
 </body>
 </html>
