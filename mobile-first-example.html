@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>Girlpower</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        /**/
+
+        .footer {
+            height: 100px;
+            background: gray;
+        }
+
+        .page-wrapper {
+            min-height: 100%;
+            background: pink;
+            margin-bottom: -100px;
+        }
+
+        .footer-buffer {
+            height: 100px;
+        }
+
+        .header {
+            height: 50px;
+            background: purple;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .column_pos_left {
+            width: 20%;
+            background: orange;
+        }
+
+        .column_pos_right {
+            width: 20%;
+            background: lightgreen;
+        }
+
+        .column_pos_center {
+            width: 60%;
+            background: lightblue;
+        }
+
+        .column,
+        .header,
+        .footer {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header,
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="header">Header</div>
+        <div class="content">
+            <div class="column column_pos_left">Left</div>
+            <div class="column column_pos_center">Center</div>
+            <div class="column column_pos_right">Right</div>
+        </div>
+
+        <div class="footer-buffer"></div>
+
+    </div>
+
+    <div class="footer">Footer</div>
+</body>
+</html>
