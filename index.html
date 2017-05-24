@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html> <!-- Это комментарий, а элемент <!DOCTYPE> предназначен для указания типа текущего документа -->
+<html> <!-- Это корневой элемент html -->
+<head> <!-- Содержимое head (кроме title) на странице не видно -->
     <!-- мета-теги -->
     <meta charset="utf-8">
 
@@ -14,10 +14,10 @@
     <!-- внешние файлы стилей -->
     <link rel="stylesheet" href="css/app.css">
 
-    <!-- инлайновые стили -->
+    <!-- инлайновые (встроенные) стили -->
     <style>
         body {
-            background: #fff;
+            background: white; /* Это комментарий в CSS; Этот стиль задает белый фон для элемента body */
         }
     </style>
 </head>
@@ -26,16 +26,20 @@
     <!-- инлайновые скрипты -->
     <script>
         $(document).ready(function() {
-            console.log('Hello, Moscow Coding School! :)');
+            console.log('Hello, Moscow Coding School! :)'); //А однострочный это комментарий в js; этот код выводит сообщение в консоль
         });
+
+        /*
+        * А так выглядит многострочный комментарий в js
+        * */
     </script>
 
     <!-- контент страницы -->
-    <h1>Page title</h1>
+    <h1>Page title</h1> <!-- тег h1 задает заголовок -->
 
-    <img src="img/kitten.jpg" alt="">
+    <img src="img/kitten.jpg" alt=""> <!-- тег img задает картинку -->
 
-    <p>
+    <p> <!-- тег p задает параграф с текстом -->
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
